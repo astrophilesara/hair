@@ -1,6 +1,6 @@
 body{
   height: 100vh;
-  background: #0062E6 !important;
+  background: #c6a16e !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@ body{
   position: absolute;
   top: 10px;
   padding-left: 15px;
-  color: #007bff;
+  color: #c6a16e;
 }
 
 .form-input input::placeholder{
@@ -58,15 +58,15 @@ body{
 }
 
 .form-input input:focus, .form-input input:valid{
-  border: 2px solid #007bff;
+  border: 2px solid #c6a16e;
 }
 
 .form-input input:focus::placeholder{
-  color: #454b69;
+  color: #c6a16e;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
-  background-color: #007bff !important;
+  background-color: #c6a16e !important;
   border: 0px;
 }
 
@@ -75,7 +75,7 @@ body{
   border: none;
   cursor: pointer;
   border-radius: 50px;
-  background: #007bff;
+  background: #c6a16e;
   color: #fff;
   font-size: 90%;
   font-weight: bold;
@@ -85,16 +85,16 @@ body{
 }
 
 .form-box button[type="submit"]:hover{
-  background: #0069d9;
+  background: #c6a16e;
 }
 
 .forget-link, .register-link{
-  color: #007bff;
+  color: #c6a16e;
   font-weight: bold;
 }
 
 .forget-link:hover, .register-link:hover{
-  color: #0069d9;
+  color: #c6a16e;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ body{
 }
 
 .form-box .btn-facebook{
-  background: #4866a8;
+  background: #c6a16e;
 }
 
 .form-box .btn-google{
@@ -113,11 +113,11 @@ body{
 }
 
 .form-box .btn-twitter{
-  background: #33ccff;
+  background: #c6a16e;
 }
 
 .form-box .btn-facebook:hover{
-  background: #3d578f;
+  background: #c6a16e;
 }
 
 .form-box .btn-google:hover{
@@ -125,6 +125,6 @@ body{
 }
 
 .form-box .btn-twitter:hover{
-  background: #2eb7e5;
+  background: #c6a16e;
 }
 

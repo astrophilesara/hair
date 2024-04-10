@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,14 +21,15 @@
           <h4 class="title text-center mt-4">
             Login into account
           </h4>
-          <form class="form-box px-3">
+          <form class="form-box px-3" method="post">
+            {% csrf_token %}
             <div class="form-input">
               <span><i class="fa fa-envelope-o"></i></span>
-              <input type="email" name="" placeholder="Email Address" tabindex="10" required>
+              <input type="username" name="username" placeholder="Email Address" tabindex="10" required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="" placeholder="Password" required>
+              <input type="password" name="password" placeholder="Password" required>
             </div>
 
             <div class="mb-3">
