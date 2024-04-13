@@ -23,5 +23,7 @@ urlpatterns = [
     path("", include("home.urls")),
     path("",include("account.urls")),
     path("",include("us.urls")),
+    path("", include("blog.urls")),
+    path("", include("services.urls")), 
 
 ]

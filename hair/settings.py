@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "home",
     "account",
     "us",
+    "blog",
+    "services",
+    
 ]
 
 MIDDLEWARE = [
