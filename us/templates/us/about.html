@@ -57,10 +57,10 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="{% url 'home:home' %}">Home</a></li>
-                                            <li class="active"><a href="{% url 'us:about' %}">About</a></li>
-                                            <li><a href="{% url 'setvices:services' %}">Services</a></li>
-                                            <li><a href="{% url 'blog:blog' %}">Portfolio</a></li>
+                                            <li class="active"><a href="{% url 'home:home' %}">Home</a></li>
+                                            <li><a href="{% url 'us:about' %}">About</a></li>
+                                            <li><a href="{% url 'services:services' %}">Services</a></li>
+                                            <li><a href="portfolio.html">Portfolio</a></li>
                                             <li><a href="{% url 'blog:blog' %}">Blog</a>
                                                 <ul class="submenu">
                                                     <li><a href="{% url 'blog:blog' %}">Blog</a></li>
@@ -68,7 +68,7 @@
                                                     <li><a href="elements.html">Element</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{% url 'us:contact' %}">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
