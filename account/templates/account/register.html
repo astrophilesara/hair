@@ -6,7 +6,7 @@
   <title>Login Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'register.css' %}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -19,36 +19,32 @@
 
         <div class="card-body">
           <h4 class="title text-center mt-4">
-            Login into account
+            Create an account
           </h4>
           <form class="form-box px-3" method="post">
             {% csrf_token %}
             <div class="form-input">
+                <span><i class="fa fa-user-o"></i></span>
+                <input type="username" name="username" placeholder="Username" tabindex="10" required>
+              </div>
+            <div class="form-input">
               <span><i class="fa fa-envelope-o"></i></span>
-              <input type="username" name="username" placeholder="Email Address" tabindex="10" required>
+              <input type="email" name="email" placeholder="Email Address" tabindex="10" required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="password" placeholder="Password" required>
+              <input type="password" name="password1" placeholder="Password" required>
+            </div>
+            <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input type="password" name="password2" placeholder="Repeat Password" required>
             </div>
 
-            <div class="mb-3">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="cb1" name="">
-                <label class="custom-control-label" for="cb1">Remember me</label>
-              </div>
-            </div>
 
             <div class="mb-3">
               <button type="submit" class="btn btn-block text-uppercase">
-                Login
+                sign up
               </button>
-            </div>
-
-            <div class="text-right">
-              <a href="#" class="forget-link">
-                Forget Password?
-              </a>
             </div>
 
 
@@ -82,9 +78,9 @@
             <hr class="my-4">
 
             <div class="text-center mb-2">
-              Don't have an account?
-              <a href="{% url 'account:register' %}" class="register-link">
-                Register here
+              Have an account?
+              <a href="{% url 'account:login' %}" class="register-link">
+                Login here!
               </a>
             </div>
           </form>

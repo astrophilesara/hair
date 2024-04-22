@@ -17,6 +17,7 @@ body{
 .img-left{
   width: 45%;
   background: url('img.jpg') center;
+  
   background-size: cover;
 }
 
