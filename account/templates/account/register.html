@@ -25,19 +25,19 @@
             {% csrf_token %}
             <div class="form-input">
                 <span><i class="fa fa-user-o"></i></span>
-                <input type="username" name="username" placeholder="Username" tabindex="10" required>
+                {{ form.username }}
               </div>
             <div class="form-input">
               <span><i class="fa fa-envelope-o"></i></span>
-              <input type="email" name="email" placeholder="Email Address" tabindex="10" required>
+              {{ form.email }}
             </div>
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="password1" placeholder="Password" required>
+              {{ form.password1 }}
             </div>
             <div class="form-input">
                 <span><i class="fa fa-key"></i></span>
-                <input type="password" name="password2" placeholder="Repeat Password" required>
+                {{ form.password2 }}
             </div>
 
 

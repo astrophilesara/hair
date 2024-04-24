@@ -24,12 +24,12 @@
           <form class="form-box px-3" method="post">
             {% csrf_token %}
             <div class="form-input">
-              <span><i class="fa fa-envelope-o"></i></span>
-              <input type="username" name="username" placeholder="Email Address" tabindex="10" required>
+              <span><i class="fa fa-user-o"></i></span>
+              {{ form.username }} 
             </div>
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="password" placeholder="Password" required>
+              {{ form.password }}
             </div>
 
             <div class="mb-3">
