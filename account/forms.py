@@ -1,4 +1,5 @@
 from django import forms
+from django.contrib.auth.models import User
 
 
 class LoginForm(forms.Form):
@@ -29,6 +30,30 @@ class RegisterForm(forms.Form):
         "required" : True}))
     
     password2 = forms.CharField(max_length=8, widget=forms.PasswordInput(attrs={
-        "placeholder" : "Password",
+        "placeholder" : "Repeat Password",
         "required" : True}))
    
+
+
+class Meta:
+    model = User
+    fields = ["useNme", "email", "password1", "password2"]
+
+
+
+    def clean(self):
+        password1 = self.cleaned_data("password1")
+        password2 = self.cleaned_data("password2")
+
+        if password1 != password2:
+            raise forms.ValidationError("Passwords are not same")
+        
+        return password1
+
+
+
+
+
+
+
+
